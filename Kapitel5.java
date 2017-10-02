@@ -22,13 +22,26 @@ public class Kapitel5{
 			n = n - 1;
 		}
 		JOptionPane.showMessageDialog(null, "Summan blir " + sum);*/
-		String hs = JOptionPane.showInputDialog(null, "H" + o1 + "jd?\nMeter");
-		double h = Double.parseDouble(hs);
-		int bounce = 0;
-		while(h > 0.01){
-			bounce = bounce + 1;
-			h = h * 0.7;
+		String hs;
+		double h;
+		while(true){
+
+
+			hs = JOptionPane.showInputDialog(null, "H" + o1 + "jd?\nMeter");
+			if(hs == null){
+				break;
+			}else{
+			h = Double.parseDouble(hs);
+			int bounce = 0;
+		
+
+		
+			while(h > 0.01){
+				bounce = bounce + 1;
+				h = h * 0.7;
+			}
+			JOptionPane.showMessageDialog(null, "Bollen stutsade " + bounce + " ggr");
+			}
 		}
-		JOptionPane.showMessageDialog(null, "Bollen stutsade " + bounce + " ggr.");
 	}
 }
