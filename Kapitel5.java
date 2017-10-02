@@ -6,14 +6,16 @@ public class Kapitel5{
 		char a2 = '\u00E4'; //ä
 		char o1 = '\u00F6'; //ö
 
-		/*String ns = JOptionPane.showInputDialog(null, "Vilket heltal vill du anv" + a2 + "nda?");
+		String ns = JOptionPane.showInputDialog(null, "Vilket heltal vill du anv" + a2 + "nda?");
 		int n = Integer.parseInt(ns);
 		int sum = 0;
-		while(n>0){
+		for (n = n; n > 0; n = n - 1) {
 			sum = sum + n * n; 
-			n = n - 1;
-		} 
-		JOptionPane.showMessageDialog(null, "Summan blir " + sum);*/
+			
+		}
+			
+		 
+		JOptionPane.showMessageDialog(null, "Summan blir " + sum);
 		/*String ns = JOptionPane.showInputDialog(null, "Vilket heltal?");
 		double n = Double.parseDouble(ns);
 		double sum = 0;
@@ -22,7 +24,7 @@ public class Kapitel5{
 			n = n - 1;
 		}
 		JOptionPane.showMessageDialog(null, "Summan blir " + sum);*/
-		String hs;
+		/*String hs;
 		double h;
 		while(true){
 
@@ -42,6 +44,6 @@ public class Kapitel5{
 			}
 			JOptionPane.showMessageDialog(null, "Bollen stutsade " + bounce + " ggr");
 			}
-		}
+		}*/
 	}
 }
