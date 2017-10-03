@@ -44,7 +44,7 @@ public class Kapitel5{
 			JOptionPane.showMessageDialog(null, "Bollen stutsade " + bounce + " ggr");
 			}
 		}*/
-		String s = JOptionPane.showInputDialog(null, "Skriv din text.");
+		/*String s = JOptionPane.showInputDialog(null, "Skriv din text.");
 		int i;
 		for (i=0; i<s.length();i=i+1)
 			if(s.charAt(i) == ' ' && s.lastIndexOf(" ") == i){
@@ -55,6 +55,13 @@ public class Kapitel5{
 				JOptionPane.showMessageDialog(null, "Sista vita tecknet finns p" + a1 + " plats: " + i);
 			}else {
 				JOptionPane.showMessageDialog(null, "Finns inga vita tecken.");
-			}
+			}*/
+		int x, y;
+		String tabell = "";
+		for(x=-10; x<=10; x=x+1){
+			y = (2 * x * x) - (5 * x) + 1;
+			tabell = tabell + x + "      " + y + "\n";
+		}
+		JOptionPane.showMessageDialog(null, tabell);
 	}
 }
