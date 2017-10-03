@@ -6,7 +6,7 @@ public class Kapitel5{
 		char a2 = '\u00E4'; //ä
 		char o1 = '\u00F6'; //ö
 
-		String ns = JOptionPane.showInputDialog(null, "Vilket heltal vill du anv" + a2 + "nda?");
+		/*String ns = JOptionPane.showInputDialog(null, "Vilket heltal vill du anv" + a2 + "nda?");
 		int n = Integer.parseInt(ns);
 		int sum = 0;
 		for (n = n; n > 0; n = n - 1) {
@@ -15,9 +15,8 @@ public class Kapitel5{
 		}
 			
 		 
-		JOptionPane.showMessageDialog(null, "Summan blir " + sum);
-		/*String ns = JOptionPane.showInputDialog(null, "Vilket heltal?");
-		double n = Double.parseDouble(ns);
+		JOptionPane.showMessageDialog(null, "Summan blir " + sum);*/
+		/*double n = Double.parseDouble(ns);
 		double sum = 0;
 		while (n>0){
 			sum = sum + 1 / n;
@@ -45,5 +44,17 @@ public class Kapitel5{
 			JOptionPane.showMessageDialog(null, "Bollen stutsade " + bounce + " ggr");
 			}
 		}*/
+		String s = JOptionPane.showInputDialog(null, "Skriv din text.");
+		int i;
+		for (i=0; i<s.length();i=i+1)
+			if(s.charAt(i) == ' ' && s.lastIndexOf(" ") == i){
+				break;
+			}
+			if(i<s.length()){
+				i = i + 1;
+				JOptionPane.showMessageDialog(null, "Sista vita tecknet finns p" + a1 + " plats: " + i);
+			}else {
+				JOptionPane.showMessageDialog(null, "Finns inga vita tecken.");
+			}
 	}
 }
