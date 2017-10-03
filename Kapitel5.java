@@ -56,12 +56,25 @@ public class Kapitel5{
 			}else {
 				JOptionPane.showMessageDialog(null, "Finns inga vita tecken.");
 			}*/
-		double x, y;
+		/*double x, y;
 		String tabell = "";
 		for(x=-1; x<=1; x=x+0.1){
 			y = (2 * x * x) - (5 * x) + 1;
 			tabell = tabell + x + "      " + y + "\n";
 		}
-		JOptionPane.showMessageDialog(null, tabell);
+		JOptionPane.showMessageDialog(null, tabell);*/
+		String m = "", sn = "";
+		String ns = JOptionPane.showInputDialog(null, "Hur m" + a1 + "nga rader skall skrivas?");
+		int n = Integer.parseInt(ns);
+		int n2 = n;
+		for(n2=n2;n2>0;n2--){
+			m=m + "+";
+		}
+		for(n=n; n>0; n--){
+				sn = sn + m + "\n";
+				m = m.substring(1);
+		}
+		
+		JOptionPane.showMessageDialog(null, sn);
 	}
 }
