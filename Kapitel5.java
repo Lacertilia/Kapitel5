@@ -56,9 +56,9 @@ public class Kapitel5{
 			}else {
 				JOptionPane.showMessageDialog(null, "Finns inga vita tecken.");
 			}*/
-		int x, y;
+		double x, y;
 		String tabell = "";
-		for(x=-10; x<=10; x=x+1){
+		for(x=-1; x<=1; x=x+0.1){
 			y = (2 * x * x) - (5 * x) + 1;
 			tabell = tabell + x + "      " + y + "\n";
 		}
