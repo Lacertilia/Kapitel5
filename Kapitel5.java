@@ -16,13 +16,15 @@ public class Kapitel5{
 			
 		 
 		JOptionPane.showMessageDialog(null, "Summan blir " + sum);*/
-		/*double n = Double.parseDouble(ns);
+		/*
+		double n = Double.parseDouble(ns);
 		double sum = 0;
 		while (n>0){
 			sum = sum + 1 / n;
 			n = n - 1;
 		}
-		JOptionPane.showMessageDialog(null, "Summan blir " + sum);*/
+		JOptionPane.showMessageDialog(null, "Summan blir " + sum);
+		*/
 		/*String hs;
 		double h;
 		while(true){
@@ -63,7 +65,7 @@ public class Kapitel5{
 			tabell = tabell + x + "      " + y + "\n";
 		}
 		JOptionPane.showMessageDialog(null, tabell);*/
-		String m = "", sn = "";
+		/*String m = "", sn = "";
 		String ns = JOptionPane.showInputDialog(null, "Hur m" + a1 + "nga rader skall skrivas?");
 		int n = Integer.parseInt(ns);
 		int n2 = n;
@@ -75,6 +77,19 @@ public class Kapitel5{
 				m = m.substring(1);
 		}
 		
-		JOptionPane.showMessageDialog(null, sn);
+		JOptionPane.showMessageDialog(null, sn);*/
+		/*int i = 1;
+		String s = "";
+		for(i = 1; i < 13; i++){
+			s = s + i + " " + (i * i) + " " + (i * i * i) + "\n";
+		}
+		JOptionPane.showMessageDialog(null, s);*/
+		/*double i = 0; 
+		double sum = 0;
+		for(i = 1; i <= 10001; i++){
+			sum = sum + (1/i);
+		}
+		JOptionPane.showMessageDialog(null, sum);*/
+		
 	}
 }
